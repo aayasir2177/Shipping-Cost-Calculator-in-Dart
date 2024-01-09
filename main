@@ -1,0 +1,18 @@
+void main() {
+  //   A program to calculate shipping cost based on destination zone
+  //   and weight of the package.
+
+  //Available zones are 'XYZ', 'ABC', and 'PQR'
+  //Cost can be $5, $7, $10 repectively.
+
+  String destinationZone = "XYX";
+  double weightInKgs = 2;
+
+  if (destinationZone == 'XYZ') {
+    print("Shipping cost is: ${weightInKgs * 5}");
+  } else if (destinationZone == 'ABC') {
+    print("Shipping cost is: \$${weightInKgs * 7}");
+  } else if (destinationZone == 'PQR') {
+    print("Shipping cost is: \$${weightInKgs * 10}");
+  }
+}
