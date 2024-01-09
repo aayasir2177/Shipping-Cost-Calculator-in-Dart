@@ -5,14 +5,17 @@ void main() {
   //Available zones are 'XYZ', 'ABC', and 'PQR'
   //Cost can be $5, $7, $10 repectively.
 
-  String destinationZone = "XYX";
-  double weightInKgs = 2;
+  String destinationZone = "ABC";
+  double weightInKgs = 2.6;
 
   if (destinationZone == 'XYZ') {
-    print("Shipping cost is: ${weightInKgs * 5}");
+    print("Shipping cost is: \$${weightInKgs * 5}");
   } else if (destinationZone == 'ABC') {
     print("Shipping cost is: \$${weightInKgs * 7}");
   } else if (destinationZone == 'PQR') {
     print("Shipping cost is: \$${weightInKgs * 10}");
+  }
+  else{
+    print("Invalid destination zone!");
   }
 }
